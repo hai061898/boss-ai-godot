@@ -1,0 +1,10 @@
+res://scenes/minion.tscn
+res://scenes/world.tscn
+res://scenes/player.tscn
+res://scenes/skeleton_boss.tscn
+res://scripts/Follow.gd
+res://scripts/Death.gd
+res://scripts/bullet.gd
+res://scripts/skeleton_boss.gd
+res://scripts/player.gd
+res://scenes/bullet.tscn
