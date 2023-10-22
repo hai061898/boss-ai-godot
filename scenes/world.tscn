@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://6hl0chleqs10"]
+[gd_scene load_steps=4 format=3 uid="uid://6hl0chleqs10"]
 
-[ext_resource type="PackedScene" uid="uid://bvovy6en4hta8" path="res://scenes/skeleton_boss.tscn" id="1_cuqfi"]
 [ext_resource type="PackedScene" uid="uid://d0eo4h5s3c3ht" path="res://scenes/player.tscn" id="1_sw10a"]
+[ext_resource type="PackedScene" uid="uid://ce6rl3risbvmb" path="res://bossGolem/scenes/boss_golem.tscn" id="2_uuu0u"]
+[ext_resource type="PackedScene" uid="uid://bvovy6en4hta8" path="res://scenes/skeleton_boss.tscn" id="3_vs11x"]
 
 [node name="World" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_sw10a")]
 position = Vector2(525, 253)
 
-[node name="SkeletonBoss" parent="." instance=ExtResource("1_cuqfi")]
-position = Vector2(532, 131)
+[node name="BossGolem" parent="." instance=ExtResource("2_uuu0u")]
+position = Vector2(637, 208)
+
+[node name="SkeletonBoss" parent="." instance=ExtResource("3_vs11x")]
+position = Vector2(413, 238)

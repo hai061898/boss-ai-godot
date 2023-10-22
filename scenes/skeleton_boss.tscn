@@ -12,7 +12,7 @@
 [ext_resource type="Script" path="res://scripts/Attack.gd" id="10_poror"]
 [ext_resource type="Script" path="res://scripts/Teleport.gd" id="11_iiwfx"]
 [ext_resource type="Script" path="res://scripts/SpawnMinion.gd" id="12_ygc5j"]
-[ext_resource type="PackedScene" uid="uid://cjgx2k3fuwikr" path="res://scenes/minion.tscn" id="13_1sibl"]
+[ext_resource type="PackedScene" uid="uid://cjgx2k3fuwikr" path="res://scenes/Boss1/minion.tscn" id="13_1sibl"]
 [ext_resource type="Script" path="res://scripts/Death.gd" id="14_krivt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e211q"]

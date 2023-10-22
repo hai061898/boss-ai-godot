@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697978023
+::res://::1697985122
 icon.svg::CompressedTexture2D::2723911580194070596::1697963507::1697963513::1::::<><>::
 ::res://art/::1697963719
 ::res://art/Mecha-stone Golem 0.1/::1697963719
@@ -20,20 +20,25 @@ summon.png::CompressedTexture2D::606225265057583037::1697448236::1697963805::1::
 summonAppear.png::CompressedTexture2D::5798401478955981076::1697448236::1697963805::1::::<><>::
 summonDeath.png::CompressedTexture2D::664024002402507431::1697448236::1697963805::1::::<><>::
 summonIdle.png::CompressedTexture2D::372235609057839996::1697448236::1697963805::1::::<><>::
-::res://scenes/::1697970642
-minion.gd::GDScript::-1::1697970255::0::1::::<>CharacterBody2D<>::
-minion.tscn::PackedScene::5418372502664716309::1697970642::0::1::::<><>::res://scripts/minion.gd<>uid://cou13b6yjctdc::::res://art/png/summonAppear.png<>uid://fkkwwajie765::::res://art/png/summonIdle.png
-player.tscn::PackedScene::8923142893831274113::1697970554::0::1::::<><>::res://scripts/player.gd<>uid://be2qoqf738s1a::::res://icon.svg
-skeleton_boss.tscn::PackedScene::3890607239583214741::1697970554::0::1::::<><>::uid://b5ax2ifqaq5k::::res://art/png/attacking.png<>res://scripts/skeleton_boss.gd<>uid://cwsvr3ycquiie::::res://art/png/death.png<>uid://dt3gotkd43807::::res://art/png/idle.png<>uid://dccruohi8nk34::::res://art/png/skill1.png<>uid://ivwpaoqk1qth::::res://art/png/summon.png<>res://scripts/FiniteStateMachine.gd<>res://scripts/state.gd<>res://scripts/Idle.gd<>res://scripts/Follow.gd<>res://scripts/Attack.gd<>res://scripts/Teleport.gd<>res://scripts/SpawnMinion.gd<>uid://cjgx2k3fuwikr::::res://scenes/minion.tscn
-world.tscn::PackedScene::2191017445191592629::1697970554::0::1::::<><>::uid://bvovy6en4hta8::::res://scenes/skeleton_boss.tscn<>uid://d0eo4h5s3c3ht::::res://scenes/player.tscn
-::res://scripts/::1697970552
+::res://bossGolem/::1697982013
+::res://bossGolem/scenes/::1697985774
+boss_golem.tscn::PackedScene::5118645782227248981::1697985774::0::1::::<><>::uid://cyxa2olny587::::res://art/Mecha-stone Golem 0.1/PNG sheet/Character_sheet.png<>uid://tdj1151pxdx0::::res://art/Mecha-stone Golem 0.1/weapon PNG/Laser_sheet.png
+::res://scenes/::1697985774
+bullet.tscn::PackedScene::8642326864875266114::1697979316::0::1::::<><>::res://scripts/bullet.gd<>uid://be2qoqf738s1a
+minion.tscn::PackedScene::5418372502664716309::1697980029::0::1::::<><>::res://scripts/minion.gd<>uid://cou13b6yjctdc
+player.tscn::PackedScene::8923142893831274113::1697979315::0::1::::<><>::res://scripts/player.gd<>uid://be2qoqf738s1a
+skeleton_boss.tscn::PackedScene::3890607239583214741::1697979867::0::1::::<><>::uid://b5ax2ifqaq5k
+world.tscn::PackedScene::2191017445191592629::1697985774::0::1::::<><>::uid://d0eo4h5s3c3ht::::res://scenes/player.tscn<>uid://ce6rl3risbvmb::::res://bossGolem/scenes/boss_golem.tscn
+::res://scripts/::1697980112
 Attack.gd::GDScript::-1::1697968626::0::1::::<>State<>::
+bullet.gd::GDScript::-1::1697978995::0::1::::<>Area2D<>::
+Death.gd::GDScript::-1::1697978631::0::1::::<>State<>::
 FiniteStateMachine.gd::GDScript::-1::1697966437::0::1::::<>Node2D<>::
-Follow.gd::GDScript::-1::1697969666::0::1::::<>State<>::
+Follow.gd::GDScript::-1::1697978463::0::1::::<>State<>::
 Idle.gd::GDScript::-1::1697967818::0::1::::<>State<>::
 minion.gd::GDScript::-1::1697970552::0::1::::<>CharacterBody2D<>::
-player.gd::GDScript::-1::1697967321::0::1::::<>CharacterBody2D<>::
-skeleton_boss.gd::GDScript::-1::1697968292::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1697979139::0::1::::<>CharacterBody2D<>::
+skeleton_boss.gd::GDScript::-1::1697979032::0::1::::<>CharacterBody2D<>::
 SpawnMinion.gd::GDScript::-1::1697969625::0::1::::<>State<>::
 state.gd::GDScript::-1::1697966362::0::1::::State<>Node2D<>::
 Teleport.gd::GDScript::-1::1697968839::0::1::::<>State<>::
