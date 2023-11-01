@@ -1,7 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697985122
+::res://::1698857172
 icon.svg::CompressedTexture2D::2723911580194070596::1697963507::1697963513::1::::<><>::
-::res://art/::1697963719
+::res://art/::1698835971
+Necromancer_creativekind-Sheet.png::CompressedTexture2D::3339851760818246510::1698835679::1698835971::1::::<><>::
+::res://art/lpc-monsters/::1698046776
+bat.png::CompressedTexture2D::4533875485621327405::1697245764::1698046776::1::::<><>::
+bee.png::CompressedTexture2D::2853581587812468085::1697245764::1698046776::1::::<><>::
+big_worm.png::CompressedTexture2D::1282165662945150154::1697245764::1698046776::1::::<><>::
+eyeball.png::CompressedTexture2D::8178387301405889667::1697245764::1698046776::1::::<><>::
+ghost.png::CompressedTexture2D::4265902827148810430::1697245764::1698046776::1::::<><>::
+man_eater_flower.png::CompressedTexture2D::8991749412798060870::1697245764::1698046776::1::::<><>::
+pumpking.png::CompressedTexture2D::3721344016044539352::1697245764::1698046776::1::::<><>::
+slime-projectile.png::CompressedTexture2D::3729014276683207884::1697245764::1698046776::1::::<><>::
+slime.png::CompressedTexture2D::5056703165968264026::1697245764::1698046776::1::::<><>::
+small_worm.png::CompressedTexture2D::5311909262457419660::1697245764::1698046776::1::::<><>::
+snake.png::CompressedTexture2D::6563238373651058444::1697245764::1698046776::1::::<><>::
 ::res://art/Mecha-stone Golem 0.1/::1697963719
 ::res://art/Mecha-stone Golem 0.1/ASE files/::1697963719
 ::res://art/Mecha-stone Golem 0.1/PNG sheet/::1697963805
@@ -20,18 +33,53 @@ summon.png::CompressedTexture2D::606225265057583037::1697448236::1697963805::1::
 summonAppear.png::CompressedTexture2D::5798401478955981076::1697448236::1697963805::1::::<><>::
 summonDeath.png::CompressedTexture2D::664024002402507431::1697448236::1697963805::1::::<><>::
 summonIdle.png::CompressedTexture2D::372235609057839996::1697448236::1697963805::1::::<><>::
-::res://bossGolem/::1697982013
-::res://bossGolem/scenes/::1697985774
-boss_golem.tscn::PackedScene::5118645782227248981::1697985774::0::1::::<><>::uid://cyxa2olny587::::res://art/Mecha-stone Golem 0.1/PNG sheet/Character_sheet.png<>uid://tdj1151pxdx0::::res://art/Mecha-stone Golem 0.1/weapon PNG/Laser_sheet.png
-::res://scenes/::1697985774
+::res://art/Skeleton enemy/::1698835971
+Skeleton enemy.png::CompressedTexture2D::1463343377630092279::1698835918::1698835971::1::::<><>::
+::res://bossGolem/::1697986405
+::res://bossGolem/scenes/::1698849145
+ArmorBuff.gd::GDScript::-1::1697988715::0::1::::<>State<>::
+boss_golem.gd::GDScript::-1::1697988883::0::1::::<>CharacterBody2D<>::
+boss_golem.tscn::PackedScene::5118645782227248981::1698849145::0::1::::<><>::res://bossGolem/scenes/boss_golem.gd<>uid://cyxa2olny587
+bullet2.gd::GDScript::-1::1697987574::0::1::::<>Area2D<>::
+bullet_2.tscn::PackedScene::3041842949252233326::1698032943::0::1::::<><>::res://bossGolem/scenes/bullet2.gd<>uid://beytc3gp1t750
+Dash.gd::GDScript::-1::1697988211::0::1::::<>State<>::
+Death.gd::GDScript::-1::1697988974::0::1::::<>State<>::
+FiniteStateMachine.gd::GDScript::-1::1697986510::0::1::::<>Node2D<>::
+Follow.gd::GDScript::-1::1697988521::0::1::::<>State<>::
+HomingMissile.gd::GDScript::-1::1697988094::0::1::::<>State<>::
+Idle.gd::GDScript::-1::1697986903::0::1::::<>State<>::
+LaserBeam.gd::GDScript::-1::1697988391::0::1::::<>State<>::
+MeleeAttack.gd::GDScript::-1::1697987208::0::1::::<>State<>::
+::res://bossillustion/::1698048547
+boss_illustion.gd::GDScript::-1::1698048297::0::1::::<>CharacterBody2D<>::
+boss_illustion.tscn::PackedScene::1684383544046140451::1698048547::0::1::::<><>::uid://bgwkcpbrofqvd
+FiniteStateMachine.gd::GDScript::-1::1698047743::0::1::::<>Node2D<>::
+Idle.gd::GDScript::-1::1698048547::0::1::::<>State<>::
+::res://bossNecromancer/::1698857092
+Attack.gd::GDScript::-1::1698856497::0::1::::<>State<>::
+AttackSkeleton.gd::GDScript::-1::1698855418::0::1::::<>State<>::
+Death.gd::GDScript::-1::1698856870::0::1::::<>State<>::
+DeathSkeleton.gd::GDScript::-1::1698857003::0::1::::<>State<>::
+FiniteStateMachine.gd::GDScript::-1::1698848502::0::1::::<>Node2D<>::
+Follow.gd::GDScript::-1::1698855418::0::1::::<>State<>::
+Idle.gd::GDScript::-1::1698849093::0::1::::<>State<>::
+necromacer.gd::GDScript::-1::1698856870::0::1::::<>CharacterBody2D<>::
+necromacer.tscn::PackedScene::8893740116135176160::1698857092::0::1::::<><>::res://bossNecromancer/necromacer.gd<>uid://bnt34ul16hkew::::res://art/Necromancer_creativekind-Sheet.png<>res://bossNecromancer/FiniteStateMachine.gd<>res://bossNecromancer/Idle.gd<>res://bossNecromancer/Summon.gd<>uid://dlal4nbigfot3::::res://bossNecromancer/skeleton.tscn<>res://bossNecromancer/Attack.gd<>uid://cmnokehirieky::::res://bossNecromancer/projectile.tscn<>res://bossNecromancer/Stagger.gd<>res://bossNecromancer/Death.gd
+projectile.gd::GDScript::-1::1698856651::0::1::::<>Area2D<>::
+projectile.tscn::PackedScene::5642812518976699276::1698857092::0::1::::<><>::res://bossNecromancer/projectile.gd<>uid://bnt34ul16hkew::::res://art/Necromancer_creativekind-Sheet.png
+skeleton.gd::GDScript::-1::1698855418::0::1::::<>CharacterBody2D<>::
+skeleton.tscn::PackedScene::7932059690761403554::1698857092::0::1::::<><>::res://bossNecromancer/skeleton.gd<>uid://u34b0xmjdlr8::::res://art/Skeleton enemy/Skeleton enemy.png<>res://bossNecromancer/FiniteStateMachine.gd<>res://bossNecromancer/Follow.gd<>res://bossNecromancer/AttackSkeleton.gd<>res://bossNecromancer/DeathSkeleton.gd
+Stagger.gd::GDScript::-1::1698856870::0::1::::<>State<>::
+Summon.gd::GDScript::-1::1698849098::0::1::::<>State<>::
+::res://scenes/::1698857092
 bullet.tscn::PackedScene::8642326864875266114::1697979316::0::1::::<><>::res://scripts/bullet.gd<>uid://be2qoqf738s1a
 minion.tscn::PackedScene::5418372502664716309::1697980029::0::1::::<><>::res://scripts/minion.gd<>uid://cou13b6yjctdc
 player.tscn::PackedScene::8923142893831274113::1697979315::0::1::::<><>::res://scripts/player.gd<>uid://be2qoqf738s1a
 skeleton_boss.tscn::PackedScene::3890607239583214741::1697979867::0::1::::<><>::uid://b5ax2ifqaq5k
-world.tscn::PackedScene::2191017445191592629::1697985774::0::1::::<><>::uid://d0eo4h5s3c3ht::::res://scenes/player.tscn<>uid://ce6rl3risbvmb::::res://bossGolem/scenes/boss_golem.tscn
-::res://scripts/::1697980112
+world.tscn::PackedScene::2191017445191592629::1698857092::0::1::::<><>::uid://d0eo4h5s3c3ht::::res://scenes/player.tscn<>uid://ce6rl3risbvmb::::res://bossGolem/scenes/boss_golem.tscn<>uid://bvovy6en4hta8::::res://scenes/skeleton_boss.tscn<>uid://dyygun8avupk7::::res://bossNecromancer/necromacer.tscn
+::res://scripts/::1697986567
 Attack.gd::GDScript::-1::1697968626::0::1::::<>State<>::
-bullet.gd::GDScript::-1::1697978995::0::1::::<>Area2D<>::
+bullet.gd::GDScript::-1::1697986567::0::1::::<>Area2D<>::
 Death.gd::GDScript::-1::1697978631::0::1::::<>State<>::
 FiniteStateMachine.gd::GDScript::-1::1697966437::0::1::::<>Node2D<>::
 Follow.gd::GDScript::-1::1697978463::0::1::::<>State<>::

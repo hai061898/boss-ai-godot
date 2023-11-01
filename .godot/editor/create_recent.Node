@@ -1,12 +1,12 @@
+VisibleOnScreenNotifier2D
 CollisionShape2D
 Sprite2D
-AnimatedSprite2D
 Area2D
 Node2D
 Label
 ProgressBar
-CanvasLayer
 AnimationPlayer
 CharacterBody2D
-VisibleOnScreenNotifier2D
+CanvasLayer
+AnimatedSprite2D
 Camera2D

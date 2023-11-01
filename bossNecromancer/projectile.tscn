@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmnokehirieky"]
+
+[ext_resource type="Script" path="res://bossNecromancer/projectile.gd" id="1_q1xwa"]
+[ext_resource type="Texture2D" uid="uid://bnt34ul16hkew" path="res://art/Necromancer_creativekind-Sheet.png" id="2_ns7g0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7r64r"]
+
+[node name="projectile" type="Area2D"]
+script = ExtResource("1_q1xwa")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_ns7g0")
+region_enabled = true
+region_rect = Rect2(1181.65, 459.215, 6.75647, 7.1619)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7r64r")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
