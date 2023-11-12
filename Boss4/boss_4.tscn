@@ -1,0 +1,62 @@
+[gd_scene load_steps=11 format=3 uid="uid://csov2dqj5clv8"]
+
+[ext_resource type="Script" path="res://Boss4/boss_4.gd" id="1_es36i"]
+[ext_resource type="Texture2D" uid="uid://be2qoqf738s1a" path="res://icon.svg" id="1_v8dbm"]
+[ext_resource type="PackedScene" uid="uid://bcp0u8k2iooy3" path="res://Boss4/bullet.tscn" id="2_jvff0"]
+[ext_resource type="Script" path="res://Boss4/FiniteStateMachine.gd" id="4_k1kbf"]
+[ext_resource type="Script" path="res://Boss4/Idle.gd" id="5_ygn7h"]
+[ext_resource type="Script" path="res://Boss4/5Leaf.gd" id="6_yy6p6"]
+[ext_resource type="Script" path="res://Boss4/4Leaf.gd" id="7_64qgf"]
+[ext_resource type="Script" path="res://Boss4/3Leaf.gd" id="8_rjrsd"]
+[ext_resource type="Script" path="res://Boss4/2Leaf.gd" id="9_u6gbe"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2bwq"]
+radius = 182.26
+
+[node name="Boss4" type="CharacterBody2D"]
+script = ExtResource("1_es36i")
+bullet_node = ExtResource("2_jvff0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 0.999996)
+scale = Vector2(0.375, 0.367188)
+texture = ExtResource("1_v8dbm")
+
+[node name="Speed" type="Timer" parent="."]
+
+[node name="Duration" type="Timer" parent="."]
+
+[node name="debug" type="Label" parent="."]
+offset_left = -27.0
+offset_top = -59.0
+offset_right = 22.0
+offset_bottom = -33.0
+text = "debug"
+
+[node name="PlayerDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+unique_name_in_owner = true
+shape = SubResource("CircleShape2D_g2bwq")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="FiniteStateMachine" type="Node2D" parent="."]
+script = ExtResource("4_k1kbf")
+
+[node name="Idle" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("5_ygn7h")
+
+[node name="5Leaf" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("6_yy6p6")
+
+[node name="4Leaf" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("7_64qgf")
+
+[node name="3Leaf" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("8_rjrsd")
+
+[node name="2Leaf" type="Node2D" parent="FiniteStateMachine"]
+script = ExtResource("9_u6gbe")
+
+[connection signal="timeout" from="Speed" to="." method="_on_speed_timeout"]
+[connection signal="body_entered" from="PlayerDetection" to="FiniteStateMachine/Idle" method="_on_player_entered"]

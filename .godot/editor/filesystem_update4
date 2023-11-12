@@ -1,4 +1,13 @@
+res://Boss4/Bullet.gd
+res://Boss4/boss_4.gd
+res://Boss4/boss_4.tscn
 res://scenes/world.tscn
-res://bossNecromancer/necromacer.tscn
-res://bossNecromancer/skeleton.tscn
-res://bossNecromancer/projectile.tscn
+res://Boss4/bullet.tscn
+res://Boss4/state.gd
+res://Boss4/FiniteStateMachine.gd
+res://Boss4/Idle.gd
+res://Boss4/2Leaf.gd
+res://Boss4/3Leaf.gd
+res://Boss4/4Leaf.gd
+res://scenes/player.tscn
+res://scripts/player.gd

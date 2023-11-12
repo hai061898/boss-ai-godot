@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcp0u8k2iooy3"]
+
+[ext_resource type="Script" path="res://Boss4/Bullet.gd" id="1_0lgl1"]
+[ext_resource type="Texture2D" uid="uid://be2qoqf738s1a" path="res://icon.svg" id="2_m027x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s05ts"]
+
+[node name="Bullet" type="Area2D"]
+script = ExtResource("1_0lgl1")
+texture_array = Array[Texture2D]([ExtResource("2_m027x"), ExtResource("2_m027x"), ExtResource("2_m027x"), ExtResource("2_m027x")])
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -2.38419e-07)
+scale = Vector2(0.113281, 0.109375)
+texture = ExtResource("2_m027x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_s05ts")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0.5, 0)
+scale = Vector2(1.05, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_screen_exited"]
